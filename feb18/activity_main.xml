@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="376dp"
+        android:layout_marginEnd="28dp"
+        android:text="Dept."
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/nameBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="195dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="172dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="48dp"
+        android:text="USN"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/usnBox"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="176dp"
+        android:layout_marginEnd="40dp"
+        android:text="Name"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/nameBox"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="92dp"
+        android:gravity="center"
+        android:text="Enter Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usnBox"
+        android:layout_width="195dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameBox" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="176dp"
+        android:text="Submit"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usnBox" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="198dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="61dp"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/usnBox" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
