@@ -11,6 +11,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.os.IBinder;
 import android.provider.Settings;
+import android.widget.Toast;
 
 public class GPStrace extends Service implements LocationListener {
     private final Context mContext;
@@ -90,10 +91,11 @@ public class GPStrace extends Service implements LocationListener {
     }
     @Override
     public void onProviderDisabled(String provider) {
+        Toast.makeText(getApplicationContext(), "GPS Disabled", Toast.LENGTH_LONG).show();
     }
     @Override
     public void onProviderEnabled(String provider) {
-
+        Toast.makeText(getApplicationContext(), "GPS Enabled", Toast.LENGTH_LONG).show();
     }
     @Override
     public void onStatusChanged(String provider, int status, Bundle extras) {

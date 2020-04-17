@@ -3,6 +3,7 @@ package com.example.lab7;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
+import android.location.LocationListener;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -10,7 +11,7 @@ import gps.location.GPStrace;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity{
 
     Button btnShowLocation;
     GPStrace gps;
@@ -35,5 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
     }
 }
