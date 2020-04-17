@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
                             + latitude + "\nLong:" + longitude, Toast.LENGTH_LONG).show();
                 } else {
                     //gps.showSettingAlert();
+                    Toast.makeText(getApplicationContext(), "Couldn't find location", Toast.LENGTH_LONG).show();
                 }
             }
         });
